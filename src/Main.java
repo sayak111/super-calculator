@@ -9,7 +9,7 @@ public class Main extends JFrame implements ActionListener{
     Main()
     {
         setSize(500, 500);
-        buttons = new JButton[]{new JButton("normal calculator"),new JButton("Formula mode")};
+        buttons = new JButton[]{new JButton("normal calculator"),new JButton("Trinnom mode")};
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(new GridLayout(9, 4));
 
@@ -31,6 +31,11 @@ public class Main extends JFrame implements ActionListener{
                 this.setVisible(false);
                 CalculatorApp c = new CalculatorApp();
                 c.setVisible(true);
+                break;
+            case "Trinnom mode":
+                this.setVisible(false);
+                TrinomApp t = new TrinomApp();
+                t.setVisible(true);
                 break;
             default:
                 break;
